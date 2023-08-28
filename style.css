@@ -112,13 +112,14 @@ h3 {
   grid-template-columns: 2fr 1fr;
 }
 
-.produkt2 {
+/* .produkt2 {
   position: relative;
-}
+} */
 
 button {
-  height: 90px;
+  height: 60px;
   width: auto;
+  margin-right: -67%;
 }
 
 .produkt_udsolgt {
@@ -144,11 +145,22 @@ button {
   border: 1px solid #3b3b3b;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
-  height: 90px;
+  height: 60px;
   width: auto;
 }
 
+.produkt_udsalg {
+  position: relative;
+}
+
 .button_udsalg {
+  text-decoration: none;
+  color: #3333332d;
+  display: inline-block;
+  background-color: #c4c4c4;
+  border: 1px solid #3b3b3b;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
   height: 90px;
   width: auto;
 }
@@ -170,20 +182,29 @@ button {
 
 .udsalg {
   position: absolute;
-  top: 10px;
-  left: 883px;
+  top: 90px;
   background-color: #fefefed0;
   color: #0a0a0a;
-  padding: 28px;
+  padding: 20px;
   border-radius: 3px;
   font-weight: bold;
   font-size: 24px;
 }
 
-.produkt3 {
+/* .produkt3 {
   position: relative;
-}
+} */
 
 .produkt_udsalg {
   position: relative;
+}
+
+.produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  width: 30vw;
+  object-fit: cover;
 }
