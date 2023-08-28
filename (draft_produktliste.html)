@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produktliste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html" id="index">forside</a></li>
+            <li><a href="produkt.html" id="produkt">produkt</a></li>
+            <li><a href="produktliste.html" id="option3">produktliste</a></li>
+            <li><a href="kategori.html" id="exit">kategori</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>produkter</h1>
+    </div>
+    <main>
+        <template id="produktTemplate">
+            <article class="product">
+                <img src="img/1533.webp" alt="img1533">
+                <h3>Puma t-shirt</h3>
+                <div>
+                    <p> rød</p>
+                    <p> 253kr</p>
+                </div>
+                <button type="button">Tilføj til kurv</button>
+
+            </article>
+        </template>
+        <!-- 
+        <article class="produkt">
+            <a href="produkt.html">
+                <img src="img/1573.webp" alt="img1573">
+            </a>
+
+            <h3>leggings</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <p> 400kr</p>
+                </div>
+                <button type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+        <article class="produkt soldOut">
+            <div class="produkt_udsolgt">
+                <a href="produkt.html">
+                    <img src="img/1552.webp" alt="img1552">
+                </a>
+                <div class="udsolgt">udsolgt</div>
+            </div>
+
+
+            <h3>bold</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <p> 400kr</p>
+                </div>
+
+                <button class="button_udsolgt" type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+
+        <article class="produkt onSale">
+            <div class="produkt_udsalg">
+                <a href="produkt.html">
+                    <img src="img/1580.webp" alt="img1580">
+                </a>
+                <div class="udsalg">-20%</div>
+            </div>
+
+
+            <h3>leggings</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <div class="ny_pris">
+                        <p class="pris_før"> 520kr</p>
+                        <p class="pris_udsalg"> 416kr</p>
+                    </div>
+
+                </div>
+
+                <button type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+
+        <article class="produkt onSale soldOut">
+            <div class="produkt_udsalg">
+                <a href="produkt.html">
+                    <img src="img/1580.webp" alt="img1580">
+                </a>
+                <div class="udsalg">-20%</div>
+                <div class="udsolgt">udsolgt</div>
+            </div>
+
+
+
+            <h3>T-shirt</h3>
+            <div class="info">
+                <div>
+                    <p> blå</p>
+                    <div class="ny_pris">
+                        <p class="pris_før"> 590</p>
+                        <p class="pris_udsalg"> 413kr</p>
+                    </div>
+
+                </div>
+
+
+                <button class="button_udsolgt" type="button">Tilføj til kurv</button>
+            </div>
+
+        </article> -->
+
+    </main>
+    <!-- <div class="produktliste">
+        <article class="produkt">
+            <img src="img/1533.webp" alt="img1533">
+            <h3>Puma t-shirt</h3>
+            <div class="info">
+                <div>
+                    <p> rød</p>
+                    <p> 253kr</p>
+                </div>
+                <button type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+        <article class="produkt">
+            <a href="produkt.html">
+                <img src="img/1573.webp" alt="img1573">
+            </a>
+
+            <h3>leggings</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <p> 400kr</p>
+                </div>
+                <button type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+        <article class="produkt soldOut">
+            <div class="produkt_udsolgt">
+                <a href="produkt.html">
+                    <img src="img/1552.webp" alt="img1552">
+                </a>
+                <div class="udsolgt">udsolgt</div>
+            </div>
+
+
+            <h3>bold</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <p> 400kr</p>
+                </div>
+
+                <button class="button_udsolgt" type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+
+        <article class="produkt onSale">
+            <div class="produkt_udsalg">
+                <a href="produkt.html">
+                    <img src="img/1580.webp" alt="img1580">
+                </a>
+                <div class="udsalg">-20%</div>
+            </div>
+
+
+            <h3>leggings</h3>
+            <div class="info">
+                <div>
+                    <p> grå</p>
+                    <div class="ny_pris">
+                        <p class="pris_før"> 520kr</p>
+                        <p class="pris_udsalg"> 416kr</p>
+                    </div>
+
+                </div>
+
+                <button type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+
+        <article class="produkt onSale soldOut">
+            <div class="produkt_udsalg">
+                <a href="produkt.html">
+                    <img src="img/1580.webp" alt="img1580">
+                </a>
+                <div class="udsalg">-20%</div>
+                <div class="udsolgt">udsolgt</div>
+            </div>
+
+
+
+            <h3>T-shirt</h3>
+            <div class="info">
+                <div>
+                    <p> blå</p>
+                    <div class="ny_pris">
+                        <p class="pris_før"> 590</p>
+                        <p class="pris_udsalg"> 413kr</p>
+                    </div>
+
+                </div>
+
+
+                <button class="button_udsolgt" type="button">Tilføj til kurv</button>
+            </div>
+
+        </article>
+
+
+
+
+    </div> -->
+
+
+    <script src="priduct.js"></script>
+</body>
+
+</html>
